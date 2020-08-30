@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Site title</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
     <meta name="description" content="Description" />
 
     <!-- Title -->
@@ -18,23 +20,75 @@
 
     <link rel="manifest" href="manifest.json" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+    <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+    <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
 
     <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world!</h1>
+</head>
 
-    <script src="js/main.js"></script>
-  </body>
+<body>
+    <header class="header">
+        <nav class="navigation__header">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a class="navigation__content" href="https://www.google.pl/">Projekty</li></a>
+                    <li class="navigation__item"><a class="navigation__content">Ciekawostki</li></a>
+                        <li class="navigation__item"><a class="navigation__content">Ciekawostki</li></a>
+                            <li class="navigation__item"><a class="navigation__content">Ciekawostki</li></a>
+                                <li class="navigation__item"><a class="navigation__content">Ciekawostki</li></a>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <header class="site__header">
+            <h1 class="main__header">Bartlomiej Pawlicki strona domowa</h1>
+        </header>
+        <section class="about">
+            <h3 class="about__header">Kim jestem ?</h3>
+            <p class="about__content">
+                Hej Jestem Bartek. </br>
+                Zapewne zadajesz sobie pytanie kim jestem ?
+            </p>
+        </section>
+
+
+        <section class="about__me">
+            <h3 class="about__tittle">Jakie mam hobby ?</h3>
+            <p class="about__paragraph">
+                Moje hobby to:
+                <ul>
+                    <li>Programowanie</li>
+                    <li>Plywanie</li>
+                    <li>Cwiczenie na silowni</li>
+                    <li>Zwiedzanie</li>
+                    <li>Gotowanie</li>
+                </ul>
+            </p>
+        </section>
+        <section class="about__me">
+            <h3 class="about__tittle">Gotowanie</h3>
+            <p class="about__paragraph">
+                Jestem pasjonatem kuchni srodziemnomorskiej, uwielbiam przyrzadzac swojego rodzaju ryby, krewetki, malze św. Jakuba
+            </p>
+        </section>
+        <section class="about__me">
+            <h3 class="about__tittle">Sport</h3>
+            <p class="about__paragraph">
+                Posiadam tytul ratownika wopr, Licencje trenera personalnego, oraz dietetyka.
+
+            </p>
+        </section>
+
+
+        <script src="js/main.js"></script>
+    </main>
+    <footer class="footer">
+
+
+    </footer>
+</body>
+
 </html>
