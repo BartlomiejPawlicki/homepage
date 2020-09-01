@@ -16,31 +16,44 @@ body {
 }
 
 .site__header {
+    padding-top: 60px;
     color: rgb(82, 58, 185);
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding-left: 20px;
+}
+
+.main__header--red {
+    color: red;
 }
 
 .header__list {
-    text-decoration-style: solid;
+    text-decoration: none;
 }
 
 .navigation {
-    color: black;
+    background: rgb(60, 187, 250);
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0;
     &__list {
         list-style: none;
         padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0
     }
     &__item {
-        padding: 5px;
+        padding: 20px;
         display: block;
+        margin-right: 40px;
     }
     &__content {
         color: blue;
+        text-decoration: none;
     }
 }
 
@@ -48,4 +61,20 @@ body {
     width: 100%;
     max-width: 700px;
     margin: 32px auto;
+}
+
+.diary__tittle {
+    color: rgb(69, 96, 219);
+}
+
+.about__box {
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    background: red;
+    box-sizing: border-box;
+    top: 0px;
+    padding: 10px;
+    right: 50%;
+    position: sticky;
 }
