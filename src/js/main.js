@@ -22,7 +22,22 @@ console.log(`Hello world!`);
 const changeButton = document.querySelector('.change--js')
 const changeColor = document.querySelector('.main__header--js')
 
+
 changeButton.addEventListener('click', (e) => {
     changeColor.innerHTML = 'click click';
     changeColor.classList.toggle('main__header--red')
+})
+
+
+
+
+
+
+const hamburgerButton = document.querySelector('.header__hamburger--js')
+
+
+
+hamburgerButton.addEventListener('click', (e) => {
+    const list = document.querySelector('.navigation__list--js')
+    list.classList.toggle('navigation__list--visible')
 })
