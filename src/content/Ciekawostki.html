@@ -5,31 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kim jestem ? Bartłomiej Pawlicki</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-    <header>
-        <a href="index.html">Strona Główna</a>
-        <a href="podstrona.html"> Podstrona</a>
-        <a href="ksiazki.html"> Książki</a>
+    <header class="header__list">
+        <nav class="navigation">
+            <ul class="navigation__list navigation__list--js">
+                <li class="navigation__item"><a class="navigation__content" href="index.html">Strona Główna</li></a>
+                    <li class="navigation__item">
+                        <a href="Ciekawostki.html" class="navigation__content">Ciekawostki</li></a>
+                        <li class="navigation__item "><a class="navigation__content ">Ciekawostki</li></a>
+                            <li class="navigation__item "><a class="navigation__content ">Ciekawostki</li></a>
+                                <li class="navigation__item "><a class="navigation__content ">Ciekawostki</li></a>
+            </ul>
+            <button class="header__hamburger header__hamburger--js">☰</button>
+        </nav>
+
     </header>
     <main>
-        <article>
-            <heder>
-                <h1 class="mainHeader"> Bartłomiej Pawlicki - strona domowa </h1>
-            </heder>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quod impedit saepe, quae vel iure dolor. Similique soluta error adipisci animi, architecto fugiat rerum assumenda reprehenderit dolores ipsam perspiciatis voluptatibus? <a href="index.html"> Przejdź do </a>                </p>
+        <main class="main">
+            <header class="site__header">
+                <h1 class="main__header main__header--js">Bartlomiej Pawlicki - strona domowa</h1>
+                <button class="change change--js">Zmien kolor tytulu </button>
+            </header>
+            <section class="about">
 
-        </article>
-    </main>
-    <footer>
-        </br>
-        </br>
-        </br>
-        Jestem tutaj dla Was.
-        <img src="" alt="photo">
-    </footer>
+                <h3 class="about__header">Kim jestem ?</h3>
+                <p class="about__content">
+                    Hej Jestem Bartek :)
+                    </br>
+                    </br>
+                    Zapewne zadajesz sobie pytanie kim jestem ?
+                </p>
+            </section>
+            <footer>
+                </br>
+                </br>
+                </br>
+                Jestem tutaj dla Was.
+                <img src="" alt="photo">
+            </footer>
+        </main>
 </body>
 
 </html>

@@ -21,8 +21,13 @@
         width: 100%;
         justify-content: center;
         align-items: center;
-        padding-left: 20px;
+        grid-area: header;
+        display:flex;
+        flex-direction: column;
+        padding-bottom:50px;
     }
+    
+   
     
     .main__header--red {
         color: red;
@@ -30,14 +35,17 @@
     
     .header__list {
         text-decoration: none;
+        grid-area: menu;
     }
     
     .navigation {
         background: rgb(60, 187, 250);
+        background-color: rgba(160, 199, 250, 0.767);
         position: fixed;
         width: 100%;
         margin: 0;
         top: 0;
+        color: black;
         &__list {
             list-style: none;
             padding: 0;
@@ -47,13 +55,17 @@
             margin: 0
         }
         &__item {
-            padding: 20px;
+            padding: 15px;
             display: block;
             margin-right: 40px;
         }
         &__content {
-            color: blue;
+            color: rgb(34, 34, 39);
             text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            font-size: 16px;
+            ;
         }
     }
     
@@ -61,11 +73,31 @@
         width: 100%;
         max-width: 700px;
         margin: 32px auto;
+        display: grid;
+        grid-template-areas: "menu menu"
+         "header header"
+        "about content"
+         "footer footer";
+         grid-template-columns: 150px 1fr;
+         grid-column-gap: 100px;
+    }
+    .diary{
+     
+        &__list{
+            padding-left:14px;
+        }
+        &__tittle{
+            color: rgb(69, 96, 219);
+        }
+    }
+ 
+   
+
+    .grid__diary{
+        grid-area:content;
+       
     }
     
-    .diary__tittle {
-        color: rgb(69, 96, 219);
-    }
     
     .about__box {
         width: 100px;
@@ -75,7 +107,6 @@
         box-sizing: border-box;
         padding: 10px;
         right: 50%;
-        margin-top: 50px;
     }
     
     .header__hamburger {
@@ -84,8 +115,15 @@
         left: 0;
         top: 0;
     }
+    .about{
+        grid-area:about;
+   
+    }
+    .footer{
+        grid-area:footer;
+    }
     
-    @media (max-width:500px) {
+    @media (max-width:750px) {
         .navigation__list--js {
             display: none;
             flex-direction: column;
@@ -93,9 +131,28 @@
         .navigation__list--visible {
             display: flex;
         }
+        .about {
+            margin-left: 60px;
+            margin-right: 20px;
+        }
+        .diary {
+            margin-left: 60px;
+            margin-right: 20px;
+        }
+        .site__header {
+            margin-left: 60px;
+            margin-top: 150px;
+            margin-right: 50px;
+            padding-right: 50px;
+        }
+        .main{
+            display:grid;
+            grid-column-gap: 20px;
+          
+        }
     }
     
-    @media (min-width:500px) {
+    @media (min-width:750px) {
         .header__hamburger {
             display: none;
         }
